@@ -7,4 +7,10 @@ var playlist = { artistName: "songTitle"}
 function updatePlaylist(object, artistName, songTitle){
   object[artistName] = songTitle // original code * object.artistName = songTitle * did not work
   return object
-} 
+}
+
+// objects removeFromPlaylist(playlist, artistName) removes 'artistName' from 'playlist'
+function removeFromPlaylist(object, artistName){
+  delete object.artistName
+  return object
+}
