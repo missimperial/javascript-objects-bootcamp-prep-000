@@ -12,5 +12,5 @@ function updatePlaylist(object, artistName, songTitle){
 // objects removeFromPlaylist(playlist, artistName) removes 'artistName' from 'playlist'
 function removeFromPlaylist(object, artistName){
   delete object[artistName]
-  return object
+  return playlist
 }
